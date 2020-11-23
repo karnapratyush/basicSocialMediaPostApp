@@ -32,7 +32,16 @@ async function createAnonUser(){
 
 // task();
 
+async function getUserById(id){
+    return await Users.findOne({where : { id }});
+}
 
+async function getUserByUsername(username)
+{
+    return await Users.findOne({where:{username}})
+}
 module.exports={
-    createAnonUser
+    createAnonUser,
+    getUserById,
+    getUserByUsername
 }
