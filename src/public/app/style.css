@@ -1,0 +1,23 @@
+*{
+    font-family: Calibri ;
+}
+
+
+#footer{
+    position: fixed;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    bottom: 0px;
+    /* background-color:var(--light); */
+    background-color: #b8d9e3;
+    width: 100%;
+
+}
+
+#content{
+    height: 2000px;
+}
+
+.customcolor{
+    background-color: #c6bee8;
+}
