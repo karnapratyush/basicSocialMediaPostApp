@@ -12,7 +12,7 @@ async function createNewPost(userId,title,body){
 }
 
 
-async function showAllPosts(query)
+async function findAllPosts(query)
 {
     // todo  handle query params
     const posts=await Posts.findAll({
@@ -39,5 +39,5 @@ async function showAllPosts(query)
 
 module.exports={
     createNewPost,
-    showAllPosts
+    findAllPosts
 }
