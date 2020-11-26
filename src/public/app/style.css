@@ -14,10 +14,14 @@
 
 }
 
-#content{
-    height: 2000px;
-}
+
 
 .customcolor{
     background-color: #c6bee8;
+}
+
+#navbar{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
 }

@@ -3,6 +3,8 @@
 $(()=>{
     $('#navbar').load("../components/navbar.html",loginIfNeeded)
     $('#footer').load("../components/footer.html")
+    $('#content').load("../components/all-post.html")
+
 })
 
 
@@ -28,4 +30,4 @@ function loginIfNeeded(){
     }
 }
 
-loginIfNeeded();
+// loginIfNeeded();
