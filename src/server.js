@@ -1,5 +1,6 @@
 const express =require('express');
 const models=require('./db/models.js');
+const PORT=process.env.PORT||4444
 const db=models.db;
 //  if we want just one thing at a time can use 
 // const {db}=require('./db/models')
@@ -18,8 +19,8 @@ app.use('/', express.static(__dirname+'/public'));
 
 db.sync()
 .then(()=>{
-    app.listen(8383,()=>{
-    console.log('http://localhost:8383');
+    app.listen(PORT,()=>{
+    console.log(`http://localhost:${PORT}`);
     
     })
 })
